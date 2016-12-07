@@ -1,6 +1,7 @@
 <?php
 namespace frontend\controllers;
 
+use app\models\Personal;
 use Yii;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
@@ -74,6 +75,17 @@ class SiteController extends Controller
     {
         return $this->render('index');
     }
+
+    public function actionCreate()
+    {
+        $model = new Personal();
+
+        if ($model->load(Yii::$app->request->post()) && $model->save())
+            //return $this->redirect(Yii::$app->request->referrer);
+            return $this->goBack();
+        return $this->render('create', ['model' => $model,]);
+    }
+
 
     /**
      * Logs in a user.
