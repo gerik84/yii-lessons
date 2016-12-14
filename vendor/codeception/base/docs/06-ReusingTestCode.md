@@ -274,7 +274,7 @@ And this is how this page object can be used in a test:
 use Page\Login as LoginPage;
 
 $I = new AcceptanceTester($scenario);
-$I->wantTo('login to site');
+$I->wantTo('main');
 $I->amOnPage(LoginPage::$URL);
 $I->fillField(LoginPage::$usernameField, 'bill evans');
 $I->fillField(LoginPage::$passwordField, 'debby');

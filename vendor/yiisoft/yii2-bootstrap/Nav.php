@@ -21,7 +21,7 @@ use yii\helpers\ArrayHelper;
  *     'items' => [
  *         [
  *             'label' => 'Home',
- *             'url' => ['site/index'],
+ *             'url' => ['main/index'],
  *             'linkOptions' => [...],
  *         ],
  *         [
@@ -35,7 +35,7 @@ use yii\helpers\ArrayHelper;
  *         ],
  *         [
  *             'label' => 'Login',
- *             'url' => ['site/login'],
+ *             'url' => ['main/login'],
  *             'visible' => Yii::$app->user->isGuest
  *         ],
  *     ],

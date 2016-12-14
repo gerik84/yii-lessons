@@ -6,7 +6,7 @@ interface SessionSnapshot
     /**
      * Saves current cookies into named snapshot in order to restore them in other tests
      * This is useful to save session state between tests.
-     * For example, if user needs log in to site for each test this scenario can be executed once
+     * For example, if user needs log in to main for each test this scenario can be executed once
      * while other tests can just restore saved cookies.
      *
      * ``` php

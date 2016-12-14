@@ -66,7 +66,7 @@ use Codeception\Module as BaseModule;
  * <?php
  * $I = new WebGuy($scenario);
  * $I->am('Guest');
- * $I->wantToTest('log in to site using Facebook');
+ * $I->wantToTest('log in to main using Facebook');
  * $I->haveFacebookTestUserAccount(); // create facebook test user
  * $I->haveTestUserLoggedInOnFacebook(); // so that facebook will not ask us for login and password
  * $fbUserFirstName = $I->grabFacebookTestUserFirstName();

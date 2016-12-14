@@ -9,7 +9,7 @@ use Codeception\TestInterface;
  * Sequence solves data cleanup issue in alternative way.
  * Instead cleaning up the database between tests,
  * you can use generated unique names, that should not conflict.
- * When you create article on a site, for instance, you can assign it a unique name and then check it.
+ * When you create article on a main, for instance, you can assign it a unique name and then check it.
  *
  * This module has no actions, but introduces a function `sq` for generating unique sequences within test and
  * `sqs` for generating unique sequences across suite.

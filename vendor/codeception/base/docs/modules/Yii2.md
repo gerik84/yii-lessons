@@ -96,9 +96,9 @@ This commands allows input like:
 
 ```php
 <?php
-$I->amOnPage(['site/view','page'=>'about']);
-$I->amOnPage('index-test.php?site/index');
-$I->amOnPage('http://localhost/index-test.php?site/index');
+$I->amOnPage(['main','page'=>'about']);
+$I->amOnPage('main');
+$I->amOnPage('main');
 $I->sendAjaxPostRequest(['/user/update', 'id' => 1], ['UserForm[name]' => 'G.Hopper');
 ```
 

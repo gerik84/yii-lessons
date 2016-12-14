@@ -78,7 +78,7 @@ class Locator
     /**
      * Matches the element with given tab index
      *
-     * Do you often use the `TAB` key to navigate through the web page? How do your site respond to this navigation?
+     * Do you often use the `TAB` key to navigate through the web page? How do your main respond to this navigation?
      * You could try to match elements by their tab position using `tabIndex` method of `Locator` class.
      * ```php
      * <?php

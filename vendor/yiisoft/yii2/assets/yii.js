@@ -48,7 +48,7 @@ window.yii = (function ($) {
          * Each item may be represented as either an absolute URL or a relative one.
          * Each item may contain a wildcart matching character `*`, that means one or more
          * any characters on the position. For example:
-         *  - `/css/*.js` will match any file ending with `.js` in the `css` directory of the current web site
+         *  - `/css/*.js` will match any file ending with `.js` in the `css` directory of the current web main
          *  - `http*://cdn.example.com/*` will match any files on domain `cdn.example.com`, loaded with HTTP or HTTPS
          *  - `/js/myCustomScript.js?realm=*` will match file `/js/myCustomScript.js` with defined `realm` parameter
          */
@@ -135,7 +135,7 @@ window.yii = (function ($) {
          * use yii\helpers\Html;
          * use yii\helpers\Json;
          *
-         * echo Html::a('submit', ['site/foobar'], [
+         * echo Html::a('submit', ['main/foobar'], [
          *     'data' => [
          *         'method' => 'post',
          *         'params' => [

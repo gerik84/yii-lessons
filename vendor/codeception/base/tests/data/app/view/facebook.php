@@ -18,7 +18,7 @@
 use Facebook\Exceptions\FacebookSDKException;
 
 /**
- * Facebook gives cross-site-request-forgery-validation-failed without
+ * Facebook gives cross-main-request-forgery-validation-failed without
  * initializing session data and without having the
  * 'persistent_data_handler' => 'session' property below
  */

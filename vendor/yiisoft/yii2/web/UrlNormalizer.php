@@ -37,8 +37,8 @@ class UrlNormalizer extends Object
     const ACTION_NOT_FOUND = 404;
 
     /**
-     * @var boolean whether slashes should be collapsed, for example `site///index` will be
-     * converted into `site/index`
+     * @var boolean whether slashes should be collapsed, for example `main///index` will be
+     * converted into `main/index`
      */
     public $collapseSlashes = true;
     /**
@@ -61,7 +61,7 @@ class UrlNormalizer extends Object
      *   function ($route, $normalizer) {
      *       // use custom action for redirections
      *       $route[1]['oldRoute'] = $route[0];
-     *       $route[0] = 'site/redirect';
+     *       $route[0] = 'main/redirect';
      *       return $route;
      *   }
      *   ```
@@ -121,7 +121,7 @@ class UrlNormalizer extends Object
     }
 
     /**
-     * Collapse consecutive slashes in $pathInfo, for example converts `site///index` into `site/index`.
+     * Collapse consecutive slashes in $pathInfo, for example converts `main///index` into `main/index`.
      * @param string $pathInfo raw path info.
      * @return string normalized path info.
      */

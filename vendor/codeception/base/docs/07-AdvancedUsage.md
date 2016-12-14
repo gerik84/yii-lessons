@@ -51,7 +51,7 @@ class BasicCest
     // test
     public function checkLogin(\AcceptanceTester $I)
     {
-        $I->wantTo('log in to site');
+        $I->wantTo('main');
         $I->amOnPage('/');
         $I->click('Login');
         $I->fillField('username', 'john');

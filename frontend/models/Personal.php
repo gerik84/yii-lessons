@@ -13,7 +13,7 @@ use Yii;
  * @property string $phone
  * @property string $professions
  */
-class Personal extends \yii\db\ActiveRecord
+class Personal extends  ObjectModel
 {
     /**
      * @inheritdoc
@@ -24,7 +24,7 @@ class Personal extends \yii\db\ActiveRecord
     }
 
     public static function getProfessionsList(){
-        return array('d' => 'developer', 'b' => 'booker', 'm' => 'manager');
+        return array('developer' => 'Разработчик', 'booker' => 'Бухгалтер', 'manager' => 'Менеджер');
     }
 
     /**
@@ -47,10 +47,10 @@ class Personal extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'first_name' => 'First Name',
-            'last_name' => 'Last Name',
-            'phone' => 'Phone',
-            'professions' => 'Professions',
+            'first_name' => 'Фамилия',
+            'last_name' => 'Имя',
+            'phone' => 'Телефон',
+            'professions' => 'Должность',
         ];
     }
 }

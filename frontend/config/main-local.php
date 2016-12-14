@@ -13,6 +13,7 @@ $config = [
             'password' => '',
         ],
     ],
+    'language' => 'ru-RU',
 ];
 
 if (!YII_ENV_TEST) {

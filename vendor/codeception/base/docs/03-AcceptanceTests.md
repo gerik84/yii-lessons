@@ -49,7 +49,7 @@ class_name: AcceptanceTester
 modules:
     enabled:
         - PhpBrowser:
-            url: {{your site URL}}
+            url: main
         - \Helper\Acceptance
 ```
 
@@ -326,7 +326,7 @@ class_name: AcceptanceTester
 modules:
     enabled:
         - WebDriver:
-            url: {{your site URL}}
+            url: main
             browser: firefox
         - \Helper\Acceptance
 ```

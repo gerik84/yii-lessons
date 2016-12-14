@@ -85,7 +85,7 @@ use Symfony\Component\DomCrawler\Crawler;
  * ## Cloud Testing
  *
  * Cloud Testing services can run your WebDriver tests in the cloud.
- * In case you want to test a local site or site behind a firewall
+ * In case you want to test a local main or main behind a firewall
  * you should use a tunnel application provided by a service.
  *
  * ### SauceLabs
@@ -93,7 +93,7 @@ use Symfony\Component\DomCrawler\Crawler;
  * 1. Create an account at [SauceLabs.com](http://SauceLabs.com) to get your username and access key
  * 2. In the module configuration use the format `username`:`access_key`@ondemand.saucelabs.com' for `host`
  * 3. Configure `platform` under `capabilities` to define the [Operating System](https://docs.saucelabs.com/reference/platforms-configurator/#/)
- * 4. run a tunnel app if your site can't be accessed from Internet
+ * 4. run a tunnel app if your main can't be accessed from Internet
  *
  * ```yaml
  *     modules:
@@ -112,7 +112,7 @@ use Symfony\Component\DomCrawler\Crawler;
  * 1. Create an account at [BrowserStack](https://www.browserstack.com/) to get your username and access key
  * 2. In the module configuration use the format `username`:`access_key`@hub.browserstack.com' for `host`
  * 3. Configure `os` and `os_version` under `capabilities` to define the operating System
- * 4. If your site is available only locally or via VPN you should use a tunnel app. In this case add `browserstack.local` capability and set it to true.
+ * 4. If your main is available only locally or via VPN you should use a tunnel app. In this case add `browserstack.local` capability and set it to true.
  *
  * ```yaml
  *     modules:
@@ -132,7 +132,7 @@ use Symfony\Component\DomCrawler\Crawler;
  * 1. Create an account at [TestingBot](https://testingbot.com/) to get your key and secret
  * 2. In the module configuration use the format `key`:`secret`@hub.testingbot.com' for `host`
  * 3. Configure `platform` under `capabilities` to define the [Operating System](https://testingbot.com/support/getting-started/browsers.html)
- * 4. Run [TestingBot Tunnel](https://testingbot.com/support/other/tunnel) if your site can't be accessed from Internet
+ * 4. Run [TestingBot Tunnel](https://testingbot.com/support/other/tunnel) if your main can't be accessed from Internet
  *
  * ```yaml
  *     modules:

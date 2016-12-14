@@ -39,7 +39,7 @@ abstract class AuthMethod extends ActionFilter implements AuthInterface
      * @var array list of action IDs that this filter will be applied to, but auth failure will not lead to error.
      * It may be used for actions, that are allowed for public, but return some additional data for authenticated users.
      * Defaults to empty, meaning authentication is not optional for any action.
-     * Since version 2.0.10 action IDs can be specified as wildcards, e.g. `site/*`.
+     * Since version 2.0.10 action IDs can be specified as wildcards, e.g. `main/*`.
      * @see isOptional()
      * @since 2.0.7
      */
